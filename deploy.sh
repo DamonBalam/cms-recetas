@@ -7,6 +7,10 @@ php artisan migrate:fresh
 #seeders
 php artisan db:seed
 
+npm install
+
+npm run dev
+
 
 #pecl install swoole
 
