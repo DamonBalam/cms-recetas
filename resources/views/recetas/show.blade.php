@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <article class="contenido-receta">
+    <article class="contenido-receta bg-white p-5 shadow">
         <h1 class="text-center mb-4">{{ $receta->titulo }}</h1>
 
         <div class="imagen-receta mb-4">
@@ -17,13 +17,15 @@
         <div class="receta-meta">
             <p>
                 <span class="font-weight-bold text-primary">Escrito en: </span>
-                {{ $receta->categoria->nombre }}
+                <a class="text-dark" href="{{ route('categorias.show', ['categoriaReceta' => $receta->categoria]) }}">
+                    {{ $receta->categoria->nombre }}
+                </a>
             </p>
 
             <p>
                 <span class="font-weight-bold text-primary">Autor: </span>
                 <a href="{{ route('perfiles.show', ['perfil' => $receta->autor->id]) }}"
-                    class="text-black">{{ $receta->autor->name }}</a>
+                    class="text-dark">{{ $receta->autor->name }}</a>
             </p>
 
             <p>
