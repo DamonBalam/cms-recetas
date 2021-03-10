@@ -66969,7 +66969,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("input", {
-    staticClass: "btn btn-danger  d-block mb-2 w-100",
+    staticClass: "btn btn-danger d-block mb-2 w-100",
     attrs: { type: "submit", value: "Eliminar" },
     on: { click: _vm.eliminarReceta }
   })
